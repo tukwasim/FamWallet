@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #1e1e2f;
+  --secondary-color: #f4f4f9;
+  --accent-color: #6c63ff;
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--primary-color)
+  );
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero input[type="email"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: var(--secondary-color);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: var(--secondary-color);
+}
+
+.feature {
+  flex: 1 1 calc(33% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.feature p {
+  color: #666;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex: 1 1 100%;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
